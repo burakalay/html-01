@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is sample website of a pizza shop">
+    <meta name="robots" content="noindex, nofollow">
+    <title>BURAK ALAY PIZZAS</title>
+    <!--add our css file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+    <!--a div for logo container -->
+    <div class="logo-container">
+        <a href="index.html"> <img src="./img/logo.png" alt="header logo"></a>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li> <a href="index.html"><img src="./img/pizzaslice.png" alt="icon">Home</a> </li>
+            <li> <a href="index.html"><img src="./img/pizzaslice.png" alt="icon">Campaigns</a> </li>
+            <li> <a href="index.html"><img src="./img/pizzaslice.png" alt="icon">Pizzas</a> </li>
+            <li> <a href="index.html"><img src="./img/pizzaslice.png" alt="icon">Other Flavours</a> </li>
+        </ul>
+    </nav>
+    <div id="telephone">
+        <a href="index.html"> <img src="./img/contact.png" alt="header logo2"></a>
+    </div>
+</header>
+
+<main>
+    <!--this is my form container -->
+    <section>
+<div id="slider">
+    <a href="#"><img src="./img/slider.png" alt=slider-logo"> </a>
+</div>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="./img/campaign.jpeg" alt="Pizza 1">
+                <a href="#">Pepperoni</a>
+                <ul class="toppings-list">
+                    <li><label><input type="checkbox" name="toppings1" value="Cheese"> Cheese</label></li>
+                    <li><label><input type="checkbox" name="toppings1" value="Pepperoni"> Bacon</label></li>
+                    <li><label><input type="checkbox" name="toppings1" value="Mushrooms"> Mushrooms</label></li>
+                </ul>
+                <a href="#" class="order-button">Order</a>
+            </div>
+            <div class="menu-item">
+                <img src="./img/campaign.jpeg" alt="Pizza 2">
+                <a href="#">Canadian</a>
+                <ul class="toppings-list">
+                    <li><label><input type="checkbox" name="toppings2" value="Cheese"> Cheese</label></li>
+                    <li><label><input type="checkbox" name="toppings2" value="Sausage"> Sausage</label></li>
+                    <li><label><input type="checkbox" name="toppings2" value="Onions"> Onions</label></li>
+                </ul>
+                <a href="#" class="order-button">Order</a>
+            </div>
+            <div class="menu-item">
+                <img src="./img/campaign.jpeg" alt="Pizza 3">
+                <a href="#">Extravaganza</a>
+                <ul class="toppings-list">
+                    <li><label><input type="checkbox" name="toppings3" value="Cheese"> Cheese</label></li>
+                    <li><label><input type="checkbox" name="toppings3" value="Bacon"> Bacon</label></li>
+                    <li><label><input type="checkbox" name="toppings3" value="Peppers"> Peppers</label></li>
+                </ul>
+                <a href="#" class="order-button">Order</a>
+            </div>
+            <div class="order-form-container">
+                <h2>Make Your Own</h2>
+                <form action="/submit-order" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="pizzas">How many pizzas?</label>
+                    <input type="number" id="pizzas" name="pizzas" min="1" required>
+
+                    <label>Pizza Size:</label>
+                    <label><input type="radio" name="size" value="Small" required> Small</label>
+                    <label><input type="radio" name="size" value="Medium"> Medium</label>
+                    <label><input type="radio" name="size" value="Large"> Large</label>
+
+                    <label>Toppings:</label>
+                    <label><input type="checkbox" name="toppings" value="Cheese"> Cheese</label>
+                    <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+                    <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+                    <label><input type="checkbox" name="toppings" value="Bacon"> Bacon</label>
+                    <label><input type="checkbox" name="toppings" value="Onions"> Onions</label>
+                    <label><input type="checkbox" name="toppings" value="Peppers"> Peppers</label>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+                    <input type="submit" value="Submit Order">
+                </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@burakalaypizzas.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>
+                <a href="#">Facebook</a> |
+                <a href="#">Twitter</a> |
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Best pizzas in town, made with fresh ingredients!</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>2024 BURAK ALAY PIZZAS. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
