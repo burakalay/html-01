@@ -1,0 +1,308 @@
+
+/* general body styling */
+/* basic stylng for the entire page to set up default font, background, and layout */
+body {
+    font-family: arial, sans-serif; /* sets the default font for the page */
+    background-color: #f0f0f0; /* sets a light gray background color */
+    color: #333; /* sets the default text color to dark gray */
+    margin: 0; /* removes default margin around the body */
+    padding: 0; /* removes default padding around the body */
+    display: flex; /* enables flexbox layout for the body */
+    flex-direction: column; /* arranges child elements (header, content, footer) in a column */
+    min-height: 100vh; /* ensures body height covers the full viewport height */
+}
+
+/* header styling */
+/* styles the header section, including the title and navigation */
+#header {
+    background-color: #333; /* sets the header background color to dark gray */
+    color: white; /* sets the header text color to white */
+    padding: 10px 0; /* adds vertical padding inside the header */
+    text-align: center; /* centers the text within the header */
+}
+
+#header h1 {
+    margin: 0; /* remove default margin around the heading */
+    font-size: 36px; /* set the font sze for the main title */
+}
+
+#header p {
+    margin: 5px 0 10px; /* set the margin around the subtitle */
+}
+
+/* navigation menu styling */
+nav ul {
+    list-style-type: none; /* removes bullet points from the list */
+    margin: 0; /* removes default margin around the list */
+    padding: 0; /* removes default padding around the list */
+}
+
+nav ul li {
+    display: inline; /* displays list items horizontally */
+    margin: 0 10px; /* adds horizontal space between list items */
+}
+
+nav ul li a {
+    color: white; /* sets the link text color to white */
+    text-decoration: none; /* removes underline from the links */
+}
+
+/* hover effect for navigation links */
+/* changes the color of navigation links on hover */
+nav ul li a:hover {
+    color: #ffcc00; /* changes the link color to a yellow shade on hover */
+}
+
+/* main content styling for both home and contact pages */
+/* general styling for the main content area across multiple pages */
+#main-content {
+    padding: 20px; /* adds padding around the main content area */
+    background-color: #e0e0e0; /* sets a light gray background color */
+}
+
+/* content container styling */
+/* styles the container for main content, with a background and shadow */
+.content-container {
+    max-width: 800px; /* sets a maximum width for the content container */
+    margin: 0 auto; /* centers the container horizontally */
+    background-color: white; /* sets the background color to white */
+    padding: 20px; /* adds padding inside the container */
+    border-radius: 10px; /* rounds the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+}
+
+/* intro container styling for the home page */
+/* styles the introductory sectin on the home page */
+.intro-container {
+    display: flex; /* enables flexbox layout for the intro section */
+    justify-content: space-between; /* distributes space between items */
+    align-items: flex-start; /* aligns items to the top */
+    gap: 20px; /* sets the space between flex items */
+    flex-wrap: wrap; /* allows item to wrap to next line if necessary */
+}
+
+#main-content {
+    flex: 1 0 auto;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.text-content {
+    flex: 1; /* allows the text content to grow and fill available space */
+    max-width: 75%; /* sets a maximum width for the text content */
+}
+
+.image-content {
+    flex: 1; /* allows the image content to grow and fill available space */
+    max-width: 25%; /* sets a maximum width for the image content */
+    text-align: right; /* aligns the image to the right */
+}
+
+.image-content img {
+    max-width: 100%; /* ensure image DOEs not exceed the container width */
+    height: auto; /* maintains the aspect ratio of the image */
+    border: 1px solid #ccc; /* adds a light gray border around the image */
+    border-radius: 5px; /* rounds the corners of the image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+    object-fit: cover; /* ensures the image covers the container proportionally */
+}
+
+/* contact container styling for the contact page */
+/* styles the contact form and raleted content */
+.contact-container {
+    display: flex; /* enables flexbox layout for the contact section */
+    justify-content: space-between; /* distributes space between form and image */
+    align-items: flex-start; /* aligns items to the top */
+    gap: 20px; /* sets space between the form and image */
+    flex-wrap: wrap; /* allows items to wrap to the next line if necessary */
+}
+
+.contact-form {
+    flex: 1; /* allows the form to grow and fill available space */
+    max-width: 65%; /* set a maximum width for  form */
+}
+
+.contact-form h3 {
+    margin-top: 0; /* removes defaulkttop margin */
+}
+
+.contact-form form {
+    display: flex; /* enables flexbox layout for the form */
+    flex-direction: column; /* Stacks form  elements vertically */
+}
+
+.contact-form label {
+    margin: 10px 0 5px; /* adds space above and below the label */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* sets input fields and textarea to full width */
+    padding: 8px; /* adds padding inside input fields */
+    margin-bottom: 10px; /* adds space below input fields */
+    border: 1px solid #ccc; /* adds a  light gray border */
+    border-radius: 5px; /* rounds the corners of input fields */
+}
+
+.contact-form input[type="submit"] {
+    width: 100%; /* sets the submit button to full width */
+    padding: 8px; /* adds padding inside the button */
+    background-color: #333; /* sets the button background color */
+    color: white; /* sets the button text color */
+    border: none; /* removes the border */
+    border-radius: 5px; /* round the corners of the button */
+    cursor: pointer; /* changes the cursor to a pointer on hover */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #555; /* chang the button color on hover */
+}
+
+.contact-image {
+    flex: 1; /* allows the image to grow and fill available space */
+    max-width: 30%; /* sets a maximum width for the image */
+}
+
+.contact-image img {
+    width: 100%; /* sets the image width to fill the container */
+    height: auto; /* maintains the aspectratio of the image */
+    border: 1px solid #ccc; /* adds a light gray border around the image */
+    border-radius: 5px; /* rounds the corners of the image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+    object-fit: cover; /* ensures the image covers the container proportionally */
+}
+
+
+.product-gallery {
+    display: flex; /* enables flex box layout for the product gallery */
+    justify-content: space-around; /* distributes space evenly around items */
+    align-items: center; /* centers items vertically */
+    padding: 20px 0; /* adds vertical padding around gallery */
+}
+
+.product-item {
+    display: flex; /* enables flex box layout for individual */
+    flex-direction: column; /* stacks product details vertically */
+    align-items: center; 
+    text-align: center; /* center text within the product item */
+}
+
+.product-item img {
+    max-width: 150px; /* sets the maximum width for product images */
+    border: 1px solid #ccc; /* adds a light gray border around images */
+    border-radius: 5px; /* rounds the corners of the images */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+    margin-bottom: 10px; /* adds space  below the image */
+}
+
+.product-item button {
+    background-color: #333; /* sets the button background color */
+    color: white; /* sets the button text color */
+    border: none; /* removes the border */
+    padding: 10px; /* adds padding inside the button */
+    border-radius: 5px; /* rounds the corners of the button */
+    cursor: pointer; /* changes the cursor to a pointer on hover */
+}
+
+.product-item button:hover {
+    background-color: #555; /* changes the button color on hover */
+}
+
+/* shop container styling for the  shop page */
+/* styles the container for the shop page */
+.shop-container {
+    max-width: 800px; /* sets a maximum width for the shop container */
+    margin: 0 auto; /* centers the container horizontally */
+    background-color: white; /* sets the background color to white */
+    padding: 20px; /* adds padding  inside the container */
+    border-radius: 10px; /* rounds the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+}
+
+.product-list {
+    display: flex; /* enables flexbox layout for the product list */
+    justify-content: space-around; /* distributes space evenly around products */
+    align-items: center; /* centers iten vertically */
+    flex-wrap: wrap; 
+}
+
+/* about container styling */
+/* styles the about section content */
+.about-container {
+    max-width: 800px; /* sets a maximum width for the about container */
+    margin: 0 auto; /* centers the container horizontally */
+    background-color: white; /* sets the background color to white */
+    padding: 20px; /* adds padding insidecontainer */
+    border-radius: 10px; /* rounds the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+}
+
+.about-container h2 {
+    text-align: center; /* center the heading text */
+    font-size: 30px; /* set the font sizr for the heading */
+    margin-bottom: 20px; /* adds space below the heading */
+}
+
+.about-image {
+    text-align: center; /* centers the image horizontally */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.about-image img {
+    width: 100%; /* sets the image  width to fill the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    max-width: 100%; /* ensures the image doesn't exceed the container width */
+    border: 1px solid #ccc; /* add a light gray border around the image */
+    border-radius: 5px; /* rounds the corner of the image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+}
+
+.about-text {
+    text-align: justify; 
+}
+
+.about-text p {
+    margin-bottom: 15px; /* adds space below each paragraph */
+    line-height: 1.6; /* sets the line height for better readability */
+}
+
+/* cart container styling for the cart page */
+/* styles the cart container and items */
+.cart-container {
+    max-width: 800px; /* sets a maximum width for the cart container */
+    margin: 0 auto; /* centers the container horizontally */
+    background-color: white; /* sets the background color to white */
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adds a subtle shadow for depth */
+}
+
+.cart-item {
+    display: flex; 
+    justify-content: space-between; /* distributes space between item details */
+    padding: 10px 0; /* adds vertical padding around cart items */
+    border-bottom: 1px solid #ccc; /* adds a border below each cart item */
+}
+
+#cart-total {
+    text-align: right; /* aligns the total amount to the right */
+    margin-top: 20px; /* adds space above the total amount */
+}
+
+#cart-total h3 {
+    margin: 0; /
+}
+
+/* footer styling */
+/* styles the footer area, ensuring it stays at the bottom of the page */
+#footer {
+    background-color: #333;
+    color: white; /* sets the footer text color to white */
+    text-align: center; /* centers the text within the footer */
+    padding: 10px 0; 
+    position: relative; /* positions the footer relative to the body */
+    bottom: 0; 
+    width: 100%; /* sets the footer width to full */
+    flex-shrink: 0; /* prevents the footer from shrinking */
+}
