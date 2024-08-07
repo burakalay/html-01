@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkman - Cart</title>
+    <link rel="stylesheet" href="layout/styles/layout.css">
+</head>
+<body>
+<div id="header">
+    <h1>Walkman</h1>
+    <p>Discover the Classics</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="main-content">
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Sepetteki ürünler burada görünecek -->
+        </div>
+        <div id="cart-total">
+            <h3>Total: $<span id="total-amount">0.00</span></h3>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+<div id="footer">
+    <p>&copy; 2024 Walkman. All rights reserved.</p>
+</div>
+
+<script src="layout/scripts/cart.js"></script>
+</body>
+</html>

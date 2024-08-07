@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walkman - Shop</title>
+  <link rel="stylesheet" href="layout/styles/layout.css">
+</head>
+<body>
+<div id="header">
+  <h1>Walkman</h1>
+  <p>Discover the Classics</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div id="main-content">
+  <div class="shop-container">
+    <h2>Shop Our Collection</h2>
+    <p>Explore our range of classic Walkman models, each designed to bring the best of portable audio technology to your fingertips.</p>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="images/walkman1.png" alt="Walkman Model 1">
+        <h3>Walkman Model 1</h3>
+        <p>$99.99</p>
+        <button onclick="addToCart('Walkman Model 1', 99.99)">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="images/walkman2.png" alt="Walkman Model 2">
+        <h3>Walkman Model 2</h3>
+        <p>$119.99</p>
+        <button onclick="addToCart('Walkman Model 2', 119.99)">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="images/walkman3.png" alt="Walkman Model 3">
+        <h3>Walkman Model 3</h3>
+        <p>$139.99</p>
+        <button onclick="addToCart('Walkman Model 3', 139.99)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p>&copy; 2024 Walkman. All rights reserved.</p>
+</div>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
